@@ -233,10 +233,7 @@ ul li {
         align-items: center;
         /* background-color: #FFD939; */
     }
-    #introImage{
-        margin-left: 0px;
-        width: 400px;
-    }
+    
     .paragraphAbout {
         margin: 0px 0px 40px -18px;
         font-family: "Inter", sans-serif;
@@ -288,7 +285,7 @@ ul li {
     }
     .image{
         width: 400px;
-        margin-top: 50px;
+        margin-top: 100px;
     }
     /* .heading{
         width: 70vw;
@@ -316,5 +313,9 @@ ul li {
         font-size: 40px;
         margin: 0px 0px 40px -18px;
         color: #C6A000;
+    }
+    #introImage{
+        margin-left: 0px;
+        width: 400px;
     }
 }
