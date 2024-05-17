@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     background: url("background.jpg");
     background-position: center;
@@ -22,7 +22,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    padding: 36px 0px;
 }
 
 .heading {
@@ -179,6 +181,7 @@ ul li {
 }
 #introImage{
     margin-left: -100px;
+    width: 600px;
 }
 #rect2 {
     position: absolute;
@@ -188,4 +191,128 @@ ul li {
     margin-top: -13px;
     margin-left: 73px;
     z-index: 1;
+}
+@media  screen and (max-width:600px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center;
+        justify-content: center; */
+        overflow-x: hidden;
+    }
+    #rect1, #rect2{
+        display: none;
+    }
+    #mainheading {
+        color: black;
+        font-size: 60px;
+        line-height: 127.9%;
+    }
+    .semibold {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        position: relative;
+        z-index: 5;
+    }
+    .left {
+        width: 100vw;
+        margin-left: 12%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        height: 60vh;
+    }
+    #leftIntro {
+        width: 100vw;
+        margin-left: -8%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #FFD939; */
+    }
+    #introImage{
+        margin-left: 0px;
+        width: 400px;
+    }
+    .paragraphAbout {
+        margin: 0px 0px 40px -18px;
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: justify;
+        width: 78vw;
+    }
+    #logo{
+        margin-top: 120px;
+    }
+    #serviceUL {
+        list-style: none;
+        margin-left: -20px;
+    }
+    .line {
+        position: absolute;
+        width: 3px;
+        background-color: #000;
+        margin-top: 12px;
+        left: 9.8%;
+        transform: translateX(-50%);
+        background-color: #FFD939;
+        height: 310px;
+        z-index: 10;
+    }
+    .headingAbout {
+        font-size: 36px;
+        margin: 0px 0px 40px -18px;
+        font-family: "Inter", sans-serif;
+        position: relative;
+        z-index: 2;
+    }
+    .round {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #FFD939;
+        margin-right: 28px;
+    }
+    #serviceImage{
+        margin: -100px 0px 60px 40px;
+        width: 320px;
+    }
+    .right {
+        width: 500px;
+        margin-right: 8%;
+    }
+    .image{
+        width: 400px;
+    }
+    /* .heading{
+        width: 70vw;
+    } */
+    ul{
+        width: 70vw;
+    }
+    #serviceUL{
+        width: 90vw;
+    }
+    #graphicImage{
+        margin-top: -16%;
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 12%;
+    }
+    #adsImage{
+        margin-top: -16%;
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 12%;
+    }
+    .heading {
+        font-family: myFont;
+        font-size: 40px;
+        margin: 0px 0px 40px -18px;
+        color: #C6A000;
+    }
 }
